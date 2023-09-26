@@ -1,0 +1,90 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+  background: #3BFF9E;
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  padding: 15px;
+  width: 350px;
+}
+
+fieldset {
+  border: 3px solid #3BFF9E;
+  border-radius: 15px;
+  gap: 100px;
+}
+
+legend {
+  border: 3px solid #3BFF9E;
+  padding: 10px;
+  text-align: center;
+  background-color: #3BFF9E;
+  border-radius: 15px;
+  color: #1E1F22;
+}
+
+.inputBox {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+  
+}
+
+.inputUser:focus ~ .labelInput, 
+.inputUser:valid ~ .labelInput {
+  top: -10px;
+  font-size: 10px;
+  color: #3BFF9E;
+}
+
+#submit {
+  background: #3BFF9E;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: #1E1F22;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 400;
+  outline: none;
+}
+
+#submit:hover {
+  background: #29b46f;
+  outline: none;
+}
+
+.divGenero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.labelGenero {
+  position: absolute;
+}
